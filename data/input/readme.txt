@@ -1,1 +1,0 @@
-training and validation images

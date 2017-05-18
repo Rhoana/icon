@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>ICON by pfisterlab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+
+ <body>
+    <section class="page-header">
+      <center><img src="/icon/images/logo_white.png" style="opacity: 0.8"></center>
+
+      <h1 class="project-name">ICON</h1>
+      <h1 class="project-description">An Interactive Approach to Train Deep Neural Networks for Segmentation of Neuronal Structures</h1>
+      <h3>(Oral Presentation, IEEE-ISBI 2017, Top 11 Best Student Papers)</h3>
+      <h2 class="project-tagline">Felix Gonda, Verena Kaynig, Ray Thouis, Daniel Haehn, Jeff Lichtman, Toufiq Parag, Hanspeter Pfister</h2>
+
+      <br>
+      <h2 class="project-tagline">Code and data accompanying the paper.</h2>
+
+      <a href="https://arxiv.org/abs/1610.09032" class="btn">View on arXiv</a>
+      <a href="https://github.com/Rhoana/icon" class="btn">View on GitHub</a>
+      <a href="https://github.com/Rhoana/icon/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Rhoana/icon" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p>
+        ICON is an interactive tool for training deep neural networks for image segmentation tasks. 
+        A user enters sparse annotations over a web-based user interface to train a classifier running
+        on a high-performance GPU-enabled server. The classifier produces pixel confidences that are
+        rendered as an overlay on the user interface to guide the the annotation process.  The server
+        needs to be setup only once on a single machine or a cluster; and the end users require a browser
+        (Chrome or Firefox) to access the system.
+
+      </p>
+
+<center><img src="/icon/images/segmentation.png"/></center>
+
+<br>
+
+<p><strong>REQUIRED PACKAGES</strong></p>
+<p>cython h5py hdf5 jpeg keras libpng libtiff mahotas matplotlib numpy opencv pandas pil pillow scikit-image scikit-learn scipy sqlite theano tornado
+</p>
+
+<br>
+
+<p><strong>EXECUTION</strong></p>
+<ol>
+<li>Run install.sh once, to setup the system (This should be done on a linux system)</li>
+
+<li>Start the web server by running: sh web.sh</li>
+
+<li>Start the training thread by running: sh train.sh</li>
+
+<li>Start the segmentation thread by running: sh segment.sh</li>
+
+<li>Access the UI by launching the following URL on a browser: http://localhost:8888/browse</li>
+
+<li>Then select a project from the drop down list. Press the start button to activate a project or stop to deactivate. Only one project can be active at a time. </li>
+
+</ol>
+<br>
+
+<p><strong>REFERENCES</strong></p>
+
+<ol>
+<li>
+Moritz Helmstaedter, Kevin L. Briggman, Srinivas C.
+Turaga, Viren Jain, H. Sebastian Seung, and Winfried
+Denk, “Connectomic reconstruction of the inner plexiform
+layer in the mouse retina,” Nature, vol. 500, no.
+7461, pp. 168–174, Aug. 2013.
+
+</li>
+<li>
+Shin-ya Takemura, C. Shan Xu, Zhiyuan Lu, Patricia K.
+Rivlin, Toufiq Parag, et al., “Synaptic circuits and their
+variations within different columns in the visual system
+of drosophila,” Proceedings of the National Academy of
+Sciences, vol. 112, no. 44, pp. 13711–13716, 2015.
+</li>
+
+<li>
+Verena Kaynig, Amelio Vazquez-Reina, Seymour
+Knowles-Barley, Mike Roberts, Thouis R. Jones,
+Narayanan Kasthuri, Eric Miller, Jeff Lichtman, and
+Hanspeter Pfister, “Large-scale automatic reconstruction
+of neuronal processes from electron microscopy
+images,” Medical Image Analysis, vol. 22, pp. 77–88,
+2015.
+</li>
+
+<li>
+Viren Jain, Benjamin Bollmann, Mark Richardson,
+Daniel R. Berger, Moritz Helmstaedter, Kevin L. Briggman,
+Winfried Denk, Jared B. Bowden, John M.
+Mendenhall, Wickliffe C. Abraham, Kristen M. Harris,
+Narayanan Kasthuri, Ken J. Hayworth, Richard Schalek,
+Juan Carlos Tapia, Jeff W. Lichtman, and H. Sebastian
+Seung, “Boundary learning by optimization with topological
+constraints,” in The Twenty-Third IEEE Conference
+on Computer Vision and Pattern Recognition,
+CVPR 2010, San Francisco, CA, USA, 13-18 June 2010,
+2010, pp. 2488–2495.
+</li>
+
+<li>
+Dan Claudiu Ciresan, Ueli Meier, Jonathan Masci,
+Luca Maria Gambardella, and Jurgen Schmidhuber,
+“Flexible, high performance convolutional neural networks
+for image classification,” International Joint
+Conference on Artificial Intelligence, IJCAI, vol. 2, pp.
+12371242, 2011.
+</li>
+
+<li>
+Christoph Sommer, Christoph N. Straehle, Ullrich Kthe,
+and Fred A. Hamprecht, “Ilastik: Interactive learning
+and segmentation toolkit.,” in IEEE International Symposium
+on Biomedical Imaging, ISBI, 2011, pp. 230–
+233.
+</li>
+
+<li>
+Toufiq Parag, Dan C. Ciresan, and Alessandro Giusti,
+“Efficient classifier training to minimize false merges in
+electron microscopy segmentation,” in IEEE International
+Conference on Computer Vision, ICCV, Santiago,
+Chile, December 2015, pp. 657–665.
+</li>
+
+<li>
+Juan Nunez-Iglesias, Ryan Kennedy, Toufiq Parag,
+Jianbo Shi, and Dmitri B. Chklovskii, “Machine learning
+of hierarchical clustering to segment 2d and 3d images,”
+PLOS ONE, vol. 8, no. 8, pp. 1–11, 2013.
+</li>
+
+<li>
+Juan Nunez-Iglesias, Ryan Kennedy, Toufiq Parag,
+Jianbo Shi, and Dmitri B. Chklovskii, “Machine learning
+of hierarchical clustering to segment 2d and 3d images,”
+PLOS ONE, vol. 8, no. 8, pp. 1–11, 2013.
+</li>
+
+<li>
+Dan C. Cires¸an, Alessandro Giusti, Luca M. Gambardella,
+and J¨urgen Schmidhuber, “Mitosis detection
+in breast cancer histology images with deep neural networks,”
+Medical Image Computing and Computer-
+Assisted Intervention, MICCAI, vol. 8150, pp. 411–418,
+2013.
+</li>
+
+<li>
+Hai Su, Fuyong Xing, Xiangfei Kong, Yuanpu Xie,
+Shaoting Zhang, and Lin Yang, “Robust cell detection
+and segmentation in histopathological images using
+sparse reconstruction and stacked denoising autoencoders,”
+The 18th Annual International Conference on
+Medical Image Computing and Computer Assisted Intervention,
+MICCAI, 2015.
+</li>
+
+<li>
+Martin Maka, Vladimr Ulman, David Svoboda, Pavel
+Matula, Petr Matula, Cristina Ederra, Ainhoa Urbiola,
+et al., “A benchmark for comparison of cell tracking
+algorithms,” Bioinformatics, vol. 30, no. 11, pp. 1609–
+1617, 2014.
+</li>
+
+<li>
+Theano Development Team, “Theano: A Python framework
+for fast computation of mathematical expressions,”
+arXiv e-prints, vol. abs/1605.02688, May 2016.
+</li>
+
+<li>
+  Lu´ıs Pedro Coelho, “Mahotas: Open source software for
+scriptable computer vision,” Journal of Open Research
+Software, vol. 1, 2013.
+</li>
+</ol>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Rhoana/icon">ICON</a> is maintained by <a href="https://github.com/Rhoana">rhoana</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+
+  
+
+</body>
+</html>

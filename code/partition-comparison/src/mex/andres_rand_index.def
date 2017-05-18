@@ -1,3 +1,0 @@
-LIBRARY "andres_rand_index"
-EXPORTS 
-	mexFunction
