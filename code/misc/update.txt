@@ -1,0 +1,28 @@
+Hi Verena,
+
+that's cool, I can give an update through email.
+
+I started coding the learning model and put in place the following:
+
+- logic for creating training data: i.e extracting user-samples based 
+  on input from web-interface (no web-interface yet, just manually 
+  specifying the inputs for testing). The inputs are in the form of 
+  pixel x,y coordinates and corresponding class label.
+
+- logic for creating test data: i.e., transforming each pixel in
+  the input image to a sample with the same number of features
+  as the training set.
+
+- Next, I am going to setup the classifier and start the training
+  and testing to see how things goes. 
+
+- I was wondering if its possible to FTP get stuff from my account?
+  Basically, since I'm using terminal into the server to do my work
+  I would like to see the results on my desktop on ipython or something.
+  Right now I have to upload into a git first and then download from
+  there to my desktop.
+
+PS: Disney Research is extending me an offer for summer internship
+    at their Cambridge office to work on a project.  I was going to
+    tell you about it today.
+

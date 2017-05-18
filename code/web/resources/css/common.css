@@ -1,0 +1,273 @@
+input:focus,
+button:focus {
+    outline: none;
+}
+
+.logo_image {
+  float: left;
+  width: 140px;
+  height: 100px;
+  opacity: 0.15;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  aborder: 1px solid;
+  background: url("../images/logo_editor.png") no-repeat scroll 0% 0% transparent;
+}
+
+.logo_image_big {
+  float: left;
+  width: 340px;
+  height: 300px;
+  opacity: 0.75;
+  background: url("../images/logo_editor.png") no-repeat scroll 0% 0% transparent;
+}
+.logo_big_description {
+  afloat: left;
+  height: 210px;
+  width: 600px;
+  opacity: 0.75;
+  amargin-left: 65px;
+  margin-top: 110px;
+  background: url("../images/logo_description_big.svg") no-repeat scroll 0% 0% transparent;
+/*  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);*/
+}
+
+.logo_description {
+  float: left;
+  height: 150px;
+  width: 940px;
+  opacity: 0.5;
+  margin-top: 0px;
+  aborder: 1px solid red;
+  background: url("../images/logo_description.svg") no-repeat scroll 0% 0% transparent;
+}
+
+
+.color_button {
+  background-color: rgba(255, 255, 255, 0.2504);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-left: 4px;
+}
+
+.toolbar_button {
+  background-color: rgba(255, 255, 255, 0.9504);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0px;
+  height: 30px;
+  width: 30px;
+  margin: 1px;
+  abackground: rgba(255,183,165,0.1350);
+}
+
+.browser_button {
+  margin-top: 1px;
+}
+
+
+.save_button {
+  background: url("../images/save.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.browse_button {
+  background: url("../images/browser_on.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.browse_button_big {
+  width: 60px;
+  height: 60px;
+  background: url("../images/circle_browse_off.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.1350);
+}
+
+.help_button {
+  background: url("../images/help.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.prev_button {
+  background: url("../images/arrow_left.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.1350);
+}
+
+.next_button {
+  background: url("../images/arrow_right.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.1350);
+}
+
+.add_button {
+  background: url("../images/plus.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.duplicate_button {
+  background: url("../images/duplicate.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.edit_button {
+  background: url("../images/edit.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.delete_button {
+  background: url("../images/delete.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.train_button {
+  background: rgba(255,183,165,0.9350);
+  color: rgba(0,0,0,1);
+  font-size: 14px;
+  afont-weight: bold;
+  padding-bottom: 0px;
+  width: 150px;
+  height: 30px;
+
+}
+
+.valid_button {
+  background: rgba(255,183,165,0.9350);
+  color: rgba(0,0,0,1);
+  abackground: rgba(255,0,0,0.6);
+  font-size: 14px;
+  afont-weight: bold;
+  padding-bottom: 0px;
+  width: 150px;
+  height: 30px;
+}
+
+.edit_slice_button {
+  background: rgba(255,183,165,0.9350);
+  color: rgba(0,0,0,1);
+  abackground: rgba(255,0,0,0.6);
+  font-size: 14px;
+  afont-weight: bold;
+  padding-bottom: 0px;
+  width: 150px;
+  height: 30px;
+}
+
+
+
+.stop_button {
+  background: rgba(255,0,0, 0.9350);
+}
+
+.segmentation_button {
+  background: url("../images/segmentation.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.annotation_button {
+  background: url("../images/labels.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.brush_button {
+  background: url("../images/brush.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.erase_button {
+  background: url("../images/eraser.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.select_button {
+  background: url("../images/select.svg") no-repeat scroll 0% 0% rgba(255,183,165,0.9350);
+}
+
+.float_left {
+  float: left;
+}
+
+.toggledon {
+  background-color: rgba(0, 0, 0, 0.2504);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.color_button:hover,
+.toolbar_button:hover {
+    border: 1px solid rgba(255, 255, 255, 1.0);
+}
+
+.active,
+.color_button:active,
+.toolbar_button:active {
+    border: 1px solid rgba(255, 255, 255, 0.750);
+}
+
+
+.single_select {
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline fill='rgba(255,183,165,0.60)' points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+    background-color:rgba(253, 166, 136, 0.25);
+    background-repeat:no-repeat;
+    background-position: right 10px top 5px;
+    background-size: 16px 16px;
+    padding-left:5px;
+    width:150px;
+    height: 31px;
+    font-family:arial,tahoma;
+    font-size:13px;
+    font-weight:bold;
+    color: #FFA579;
+    text-align:center;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border:0;
+    outline:0;
+    -webkit-transition:0.3s ease all;
+       -moz-transition:0.3s ease all;
+        -ms-transition:0.3s ease all;
+         -o-transition:0.3s ease all;
+            transition:0.3s ease all;
+
+}
+
+
+.rotate180 {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+
+#confirmation {
+  position: absolute;
+  z-index: 100;
+  width: 820px;
+  height: 300px;
+  margin-left: 72px;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(81, 33, 33, 1);
+  abackground-image: url(../images/module_light.png);
+  box-shadow: 0 8px 4px -4px rgba(44,12,12,0.5);
+  left: 60px;
+  color: rgba(255,255,255,0.45);
+}
+
+#confirmation div {
+  padding: 25px;
+}
+
+#confirmation div span {
+  text-align: left;
+}
+
+#confirmation button {
+  width: 100px;
+}
+
+#confirmation hr {
+  border: 1px solid rgba(255,255,255,0.15);
+  margin-bottom: 20px;
+}
+
+.locked {
+  width: 20px;
+  height: 20px;
+}
+
+.unlocked {
+  width: 20px;
+  height: 20px;
+}

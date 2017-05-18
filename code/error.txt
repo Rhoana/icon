@@ -1,0 +1,248 @@
+<<!! BUG IN FGRAPH.REPLACE OR A LISTENER !!>> <class 'theano.gof.fg.CachedConstantError'> You manually constructed a FunctionGraph, but you passed it a graph that has a cached constant. This should not happen. Clone the graph before building the FunctionGraph. local_fill_to_alloc
+ERROR (theano.gof.opt): Optimization failure due to: local_fill_to_alloc
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1527, in process_node
+    fgraph.replace_all_validate(repl_pairs, reason=lopt)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/toolbox.py", line 259, in replace_all_validate
+    fgraph.replace(r, new_r, reason=reason, verbose=False)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 502, in replace
+    self.change_input(node, i, new_r, reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 442, in change_input
+    self.__import_r__([new_r], reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 257, in __import_r__
+    self.__import__(apply_node, reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 373, in __import__
+    self.__setup_r__(input)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 148, in __setup_r__
+    "You manually constructed a FunctionGraph, but you passed it a"
+CachedConstantError: You manually constructed a FunctionGraph, but you passed it a graph that has a cached constant. This should not happen. Clone the graph before building the FunctionGraph.
+
+<<!! BUG IN FGRAPH.REPLACE OR A LISTENER !!>> <class 'theano.gof.fg.CachedConstantError'> You manually constructed a FunctionGraph, but you passed it a graph that has a cached constant. This should not happen. Clone the graph before building the FunctionGraph. local_shape_to_shape_i
+ERROR (theano.gof.opt): Optimization failure due to: local_shape_to_shape_i
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1527, in process_node
+    fgraph.replace_all_validate(repl_pairs, reason=lopt)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/toolbox.py", line 259, in replace_all_validate
+    fgraph.replace(r, new_r, reason=reason, verbose=False)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 502, in replace
+    self.change_input(node, i, new_r, reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 442, in change_input
+    self.__import_r__([new_r], reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 257, in __import_r__
+    self.__import__(apply_node, reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 373, in __import__
+    self.__setup_r__(input)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 148, in __setup_r__
+    "You manually constructed a FunctionGraph, but you passed it a"
+CachedConstantError: You manually constructed a FunctionGraph, but you passed it a graph that has a cached constant. This should not happen. Clone the graph before building the FunctionGraph.
+
+<<!! BUG IN FGRAPH.REPLACE OR A LISTENER !!>> <type 'exceptions.AttributeError'> 'TensorVariable' object has no attribute 'clients' local_subtensor_lift
+ERROR (theano.gof.opt): Optimization failure due to: local_subtensor_lift
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1527, in process_node
+    fgraph.replace_all_validate(repl_pairs, reason=lopt)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/toolbox.py", line 259, in replace_all_validate
+    fgraph.replace(r, new_r, reason=reason, verbose=False)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 502, in replace
+    self.change_input(node, i, new_r, reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 449, in change_input
+    r, new_r, reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 577, in execute_callbacks
+    fn(self, *args, **kwargs)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 476, in on_change_input
+    self.process_node(fgraph, node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 525, in process_node
+    assert len(node.inputs[0].clients) > 0
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+<<!! BUG IN FGRAPH.REPLACE OR A LISTENER !!>> <class 'theano.gof.fg.CachedConstantError'> You manually constructed a FunctionGraph, but you passed it a graph that has a cached constant. This should not happen. Clone the graph before building the FunctionGraph. local_subtensor_make_vector
+ERROR (theano.gof.opt): Optimization failure due to: local_subtensor_make_vector
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1527, in process_node
+    fgraph.replace_all_validate(repl_pairs, reason=lopt)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/toolbox.py", line 259, in replace_all_validate
+    fgraph.replace(r, new_r, reason=reason, verbose=False)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 502, in replace
+    self.change_input(node, i, new_r, reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 442, in change_input
+    self.__import_r__([new_r], reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 257, in __import_r__
+    self.__import__(apply_node, reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 373, in __import__
+    self.__setup_r__(input)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 148, in __setup_r__
+    "You manually constructed a FunctionGraph, but you passed it a"
+CachedConstantError: You manually constructed a FunctionGraph, but you passed it a graph that has a cached constant. This should not happen. Clone the graph before building the FunctionGraph.
+
+ERROR (theano.gof.opt): Optimization failure due to: local_subtensor_lift
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 2052, in local_subtensor_lift
+    if not u.owner or len(u.clients) > 1:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+ERROR (theano.gof.opt): Optimization failure due to: local_add_canonizer
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 3550, in transform
+    for c, c_idx in out.clients:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+ERROR (theano.gof.opt): Optimization failure due to: local_add_canonizer
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 3550, in transform
+    for c, c_idx in out.clients:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+ERROR (theano.gof.opt): Optimization failure due to: local_add_canonizer
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 3550, in transform
+    for c, c_idx in out.clients:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+ERROR (theano.gof.opt): Optimization failure due to: local_add_canonizer
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 3550, in transform
+    for c, c_idx in out.clients:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+ERROR (theano.gof.opt): Optimization failure due to: local_add_canonizer
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 3550, in transform
+    for c, c_idx in out.clients:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+ERROR (theano.gof.opt): Optimization failure due to: local_add_canonizer
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 3550, in transform
+    for c, c_idx in out.clients:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+<<!! BUG IN FGRAPH.REPLACE OR A LISTENER !!>> <class 'theano.gof.fg.CachedConstantError'> You manually constructed a FunctionGraph, but you passed it a graph that has a cached constant. This should not happen. Clone the graph before building the FunctionGraph. local_track_shape_i
+ERROR (theano.gof.opt): Optimization failure due to: local_track_shape_i
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1527, in process_node
+    fgraph.replace_all_validate(repl_pairs, reason=lopt)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/toolbox.py", line 259, in replace_all_validate
+    fgraph.replace(r, new_r, reason=reason, verbose=False)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 502, in replace
+    self.change_input(node, i, new_r, reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 442, in change_input
+    self.__import_r__([new_r], reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 257, in __import_r__
+    self.__import__(apply_node, reason=reason)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 373, in __import__
+    self.__setup_r__(input)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 148, in __setup_r__
+    "You manually constructed a FunctionGraph, but you passed it a"
+CachedConstantError: You manually constructed a FunctionGraph, but you passed it a graph that has a cached constant. This should not happen. Clone the graph before building the FunctionGraph.
+
+ERROR (theano.gof.opt): Optimization failure due to: local_add_canonizer
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 3550, in transform
+    for c, c_idx in out.clients:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+ERROR (theano.gof.opt): Optimization failure due to: local_add_canonizer
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 3550, in transform
+    for c, c_idx in out.clients:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+ERROR (theano.gof.opt): Optimization failure due to: local_add_canonizer
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 3550, in transform
+    for c, c_idx in out.clients:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+ERROR (theano.gof.opt): Optimization failure due to: local_add_canonizer
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1493, in process_node
+    replacements = lopt.transform(node)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/tensor/opt.py", line 3550, in transform
+    for c, c_idx in out.clients:
+AttributeError: 'TensorVariable' object has no attribute 'clients'
+
+<<!! BUG IN FGRAPH.REPLACE OR A LISTENER !!>> <type 'exceptions.AssertionError'>  local_track_shape_i
+ERROR (theano.gof.opt): Optimization failure due to: local_track_shape_i
+ERROR (theano.gof.opt): TRACEBACK:
+ERROR (theano.gof.opt): Traceback (most recent call last):
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1527, in process_node
+    fgraph.replace_all_validate(repl_pairs, reason=lopt)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/toolbox.py", line 259, in replace_all_validate
+    fgraph.replace(r, new_r, reason=reason, verbose=False)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/fg.py", line 501, in replace
+    assert (node == 'output' and self.outputs[i] is r) or (node.inputs[i] is r)
+AssertionError
+
+Exception in thread training:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/home/fgonda/icon/code/model/tasks.py", line 73, in run
+    self.work()
+  File "/home/fgonda/icon/code/model/tasks.py", line 228, in work
+    settings.epochs )
+  File "/home/fgonda/icon/code/model/mlp_classifier.py", line 359, in train
+    self.t_learningrate: self.shared_learningrate})
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/compile/function.py", line 266, in function
+    profile=profile)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/compile/pfunc.py", line 511, in pfunc
+    on_unused_input=on_unused_input)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/compile/function_module.py", line 1465, in orig_function
+    on_unused_input=on_unused_input).create(
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/compile/function_module.py", line 1160, in __init__
+    optimizer_profile = optimizer(fgraph)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 90, in __call__
+    return self.optimize(fgraph)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 81, in optimize
+    ret = self.apply(fgraph, *args, **kwargs)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 195, in apply
+    sub_prof = optimizer.optimize(fgraph)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 81, in optimize
+    ret = self.apply(fgraph, *args, **kwargs)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1837, in apply
+    lopt_change = self.process_node(fgraph, node, lopt)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1535, in process_node
+    self.failure_callback(e, self, repl_pairs, lopt)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1396, in warn_inplace
+    return NavigatorOptimizer.warn(exc, nav, repl_pairs, local_opt)
+  File "/home/fgonda/iconenv/local/lib/python2.7/site-packages/theano/gof/opt.py", line 1386, in warn
+    raise exc
+AssertionError
+
+

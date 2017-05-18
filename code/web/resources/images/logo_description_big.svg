@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="800px" height="300px" viewBox="0 0 800 300"
+						     version="1.1" xmlns="http://www.w3.org/2000/svg"
+						     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+<text x="10" y="35" text-anchor="left"  font-size="35px" fill="rgba(255,183,165,1.0)">icon</text>
+<text x="10" y="75" text-anchor="left" font-size="16px" fill="rgba(255,183,165,1)">
+	An Interactive Toolkit for Training Deep Neural Networks for Segmentation Tasks</text>
+
+<line x1="10" y1="90" x2="800" y2="90" style="stroke:rgba(0, 0, 0, 1.0);stroke-width:1" />
+
+<text x="10" y="110" text-anchor="left" font-size="16px" fill="rgba(255,183,165,1)">
+	Interactively annotate an image from the comfort of your browser while a deep neural</text>
+<text x="10" y="130" text-anchor="left" font-size="16px" fill="rgba(255,183,165,1)">
+	 network model train and segment your image in realtime. Your annotations feeds</text>
+<text x="10" y="150" text-anchor="left" font-size="16px" fill="rgba(255,183,165,1)">
+	 the model while its pixel confidences guides you.</text>
+
+<line x1="10" y1="165" x2="800" y2="165" style="stroke:rgba(0, 0, 0, 1.0);stroke-width:1" />
+
+<text x="10" y="200" text-anchor="left" font-size="25px" fill="rgba(255,183,165,1.0)">Click to explore.</text>
+
+
+</svg>

@@ -1,0 +1,64 @@
+.copyright {
+  width: 1115px;
+  margin-top: 50px;
+  margin-left: 5px;
+  height: 60px;
+
+  afloat: left;
+  atext-align: left;
+  aline-height: 1;
+  acolor: #884949;
+  font-size: 12px;
+  aborder: 1px solid green;
+}
+
+.harvard
+{
+  float: left;
+  aborder: 1px solid red;
+/*  background-image: url(../images/harvard.png);
+*/  
+/*width: 153px;
+  height: 78px;
+*/
+    margin: 3px 0;
+    max-width: 167px;
+    width: 150px;
+    vertical-align: middle;
+}
+
+.seas
+{
+  float: left;
+  aborder: 1px solid red;
+/*  background-image: url(../images/seaslogo.png);
+*/
+    margin: 3px 0;
+    max-width: 331px;
+    width: 180px;
+    vertical-align: middle;
+}
+
+.mcb
+{
+  float: left;
+  aborder: 1px solid red;
+/*  background-image: url(../images/mcb.svg);
+*/
+    margin: 3px 0;
+    max-width: 291px;
+    width: 109px;
+    height: 30px;
+    opacity: 0.8;
+    vertical-align: middle;
+}
+
+.credits-divider
+{
+  float: left;
+  border-left: 1px solid rgba(255,255,255,0.21);
+  width: 1px;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 11px;
+}

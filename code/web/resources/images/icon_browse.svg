@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600px" height="200px" viewBox="0 0 600 200"
+						     version="1.1" xmlns="http://www.w3.org/2000/svg"
+						     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+ <style type="text/css">
+ .browsecircle {
+     fill:rgba(0,0,0,0);
+		 pointer-events: all;
+ }
+ .browsecircle:hover {
+     fill: red;
+ }
+ </style>
+
+
+
+<text x="150" y="50" text-anchor="left" font-size="35px" fill="rgba(255,183,165,1.0)">ICON</text>
+<text x="150" y="70" text-anchor="left" font-size="15px" fill="rgba(255,183,165,0.80)">i n t e r a c t i v e  c o n n e c t o m i c s</text>
+<text x="150" y="90" text-anchor="left" font-size="12px" fill="rgba(255,183,165,0.8)">An Interactive Deep Learning Toolkit for Automatic Segmentation of Images</text>
+<text x="150" y="130" text-anchor="left" font-size="12px" fill="rgba(255,183,165,0.8)">Felix Gonda - Master Thesis, under supervision of Dr. Verena Kaynig-Fitkau</text>
+<text x="150" y="150" text-anchor="left" font-size="12px" fill="rgba(255,183,165,0.8)">2015 Harvard University</text>
+<line x1="0" y1="108" x2="800" y2="108" style="stroke:rgba(0, 0, 0, 0.254);stroke-width:3" />
+
+
+<text x="150" y="190" text-anchor="left" font-size="12px" fill="rgba(255,183,165,0.8)">Click logo to explore.</text>
+
+</svg>

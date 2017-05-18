@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en-gb" dir="ltr">
+<head>
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<meta charset="utf-8" />
+	<title>icon - interactive connectomics</title>
+	<link rel="stylesheet" href="css/load.css" />
+<!-- 	<link rel="stylesheet" href="css/browser.css" />
+ -->	<link rel="stylesheet" href="css/project.css" />
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/credit.css">
+	<script data-main="js/projectlauncher" src="js/vendors/require.js"></script>
+</head>
+<body id='page'>
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"><p style="padding-top:540px; padding-right: 25px; float:right;">Loading,</p></div>
+		<div class="loader-section section-right"><p style="padding-top:540px; padding-left: 5px;"> please wait...</p></div>
+	</div>
+
+	<div id="confirmation">
+
+		<div>
+			<div>
+				<h2 id="confirmation_title">Save Confirmation</h2>
+				<hr/>
+				<span id="confirmation_msg">
+					Click OK to save your changes and return to the project browser
+					screen or CANCEL to return to editing.
+				</span>
+			</div>
+			<div>
+				<center><button id="confirmok" class="toolbar_button">Ok</button><button id="confirmcancel" class="toolbar_button">Cancel</button></center>
+			</div>
+		</div>
+
+	</div>
+
+	<form id="project_form">
+	<div class="header">
+			<!-- <div class="logo_image"></div> -->
+			<svg width="820px" height="78px" viewBox="0 0 820 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<image xlink:href="images/logo_browser.png" x="10" y="10" height="48px" width="74px" opacity="0.41980" />
+<!-- 
+			<line x1="0" y1="162" x2="820" y2="162" style="stroke:rgba(72,29,29,1.0);stroke-width:3" />
+			<line x1="0" y1="160" x2="820" y2="160" style="stroke:rgba(255,183,165,0.28);stroke-width:1" /> -->
+			</svg>
+	</div>
+				<div class="toolbar">
+						
+						<svg style="width:25px; height: 40px; float: left;">
+					  	<line x1="25" y1="0" x2="25" y2="40" style="stroke:rgba(0, 0, 0, 0.254);stroke-width:3" />
+						</svg>
+						<input id="browser_button" class="toolbar_button browse_button float_left" type="button" value="">
+						<input id="saveproject_button" class="toolbar_button save_button float_left" type="submit" value="">
+				</div>
+				
+
+		<div class="container" style="z-index: 1;">
+
+			<article>
+
+				<div class="project_section_title">Model Settings</div>
+				<div class="project_section">
+					<div>
+
+							<table class="gridtable">
+								<tr>
+									<td class="table_label_column">Project Name</td>
+									<td>
+										<input type="text" value="" placeholder="Enter project name" id="project_name" required>
+										<span id="project_name_text"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Model Type</td>
+									<td>
+											<select class="single_select" id="modeltypeselector">
+											  <option value="MLP">MLP</option>
+											  <option value="CNN">CNN</option>
+											</select>
+											<span id="modeltypeselector_text"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Initial Model</td>
+									<td>
+											<span id="initialmodel"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Sample Size</td>
+									<td>
+										<input type="text" value="39" id="sample_size" required>
+										<span id="sample_size_text"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Learning Rate</td>
+									<td>
+										<input type="text" value="0.001" id="learning_rate" required>
+										<span id="learning_rate_text"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Momentum</td>
+									<td>
+										<input type="text" value="0.9" id="momentum" required>
+										<span id="momentum_text"></span>
+									</td>
+								</tr>
+
+								<tr>
+									<td>Batch Size</td>
+									<td>
+										<input type="text" value="10" id="batch_size" required>
+										<span id="batch_size_text"></span>
+									</td>
+								</tr>
+<!--
+								<tr>
+									<td>Epochs</td>
+									<td>
+										<input type="text" value="20" id="epochs" required>
+										<span id="epochs_text"></span>
+									</td>
+								</tr>
+-->
+								<tr>
+									<td>#Units/Hidden Layers</td>
+									<td>
+										<input type="text" placeholder="100, 10, 10" value="100, 10, 10" id="units_per_hidden" required>
+										<span id="units_per_hidden_text"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Num Kernels</td>
+									<td id="num_kernels_col">
+										<input type="text" placeholder="48, 48" value="100, 10, 10" id="num_kernels" required>
+										<span id="num_kernels_text"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Kernel Sizes</td>
+									<td id="kernel_sizes_col">
+										<input type="text" placeholder="5, 5" value="100, 10, 10" id="kernel_sizes" required>
+										<span id="kernel_sizes_text"></span>
+									</td>
+								</tr>
+<!--
+								<tr>
+								    <td>Training time (secs)</td>
+								    <td>
+								            <input type="text" value="30" id="train_time" required>
+														<span id="train_time_text"></span>
+								    </td>
+								</tr>
+-->
+							</table>
+
+					</div>
+
+				</div>
+				<div class="project_section_title">Class Labels</div>
+				<div class="project_section">
+					<table class="gridtable" id="labels_table">
+						<tr>
+							<th class="label_column">Name</th>
+							<th class="label_column">Color</th>
+							<th class="label_column">Action</th>
+						</tr>
+						<tr id="new_label_template">
+							<td><input id="new_label_name" type="text" value="" placeholder="Enter label name"></td>
+							<td><input id="new_label_color" name="color" type="color" value="#00FFFF" class="toolbar_button toolbar_browser_button"></td>
+							<td>
+								  <img id="addlabel_button" class="toolbar_button toolbar_browser_button" src="/images/plus.svg"/>
+								  <img id="deletelabel_button" class="toolbar_button toolbar_browser_button" src="/images/delete.svg"/>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+
+				<div class="copyright">
+					<img src="images/harvard.png" class="harvard">
+					<div class="credits-divider"></div>
+					<img src="images/seaslogo.png" class="seas">
+					<div class="credits-divider"></div>
+					<img src="images/mcb.svg" class="mcb">
+				</div>
+
+			</article> <!-- article -->
+
+
+		</div> <!-- container -->
+
+
+    </form>
+
+</body>
+</html>
+<!-- tex

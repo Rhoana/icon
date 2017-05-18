@@ -1,0 +1,75 @@
+body {
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+
+          abackground-color: rgba(91, 43, 43, 1);
+          abackground-color: rgba(127, 87, 86, 1);
+
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255,255,255,0.75);
+
+}
+
+
+body#page {
+  background-color: rgba(91, 43, 43, 1);
+  abackground-color: rgba(117, 137, 58, 1);
+  abackground-color: #42531E;
+  abackground-image: url(../images/page_background.png);
+  acolor: #E6FFB0;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+   font-family="Futura LT W01 Book,Helvetica,sans-serif,Arial"
+
+    /*    background: url(../images/page_gradient.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;*/
+}
+
+.container
+{
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    width: 800px;
+}
+
+
+
+.toolbar
+{
+    position: absolute;;
+    top: 90px;
+    left: 5px;
+    margin: 5px;
+    height: 34px;
+    width: 820px;
+    background: rgba(255,255,255,0.15);
+    1border: solid rgba(255,255,255,0.15) 1px;
+}
+
+
+.help_section_title {
+    margin-left: 5px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.help_section {
+	min-height: 200px;
+	width: 800px;
+	margin-top: 0px;
+	margin-left: 5px;
+	border-radius: 0px;
+	border: 1px solid rgba(255, 255, 255, 0.04);
+	border-radius: 4px;
+	background: url("../images/module_dark.png") repeat scroll 0px 0px padding-box transparent;
+	background-color: rgba(81, 33, 33, 1);
+	padding: 10px;
+}
