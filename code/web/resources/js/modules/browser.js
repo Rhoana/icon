@@ -379,7 +379,7 @@ define(['jquery','util', 'zlib', 'chart','scrollbar', 'tiff'], function($, Util,
     var active = (this.data.active == undefined) ? '':this.data.active.id;
     //document.getElementById("active_project").innerHTML = active;
 
-    //localStorage.IconProjectId = (this.data.project != null) ? this.data.project.id:undefined;
+    localStorage.IconProjectId = (this.data.project != null) ? this.data.project.id:undefined;
     this.setProjectId();
     Util.closeLoadingScreen();
 
