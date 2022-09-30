@@ -73,3 +73,8 @@ tornado
    Press the start button to activate a project
    or stop to deactivate.  Only one project can
    be active at a time. 
+   
+# Links
+* Paper on [arXiv](https://arxiv.org/abs/1610.09032) 
+* Download [zip](https://github.com/Rhoana/icon/zipball/master)
+* Download [.tar.gz](https://github.com/Rhoana/icon)
